@@ -17,7 +17,7 @@ const MenuPage = () => {
     }
     if (cttog.ctStatus === 1){
       cttog.setctStatus(0);
-      document.getElementById('cart-page').style.right = "-500px";
+      document.getElementById('cart-page').style.right = "-1500px";
 
     } 
   };

@@ -26,7 +26,7 @@
     position: fixed;
     background: #202020;
     z-index: 111;
-    right: -500px;
+    right: -1500px;
     transition: 0.35s ease-in-out;
 
 }
@@ -38,10 +38,13 @@
 .cart-items {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 400px;
     gap: 15px;
 }
 
 .cart-item {
+    width: 100%;
     border-radius: 7px;
     padding: 9px;
     background: #202020;

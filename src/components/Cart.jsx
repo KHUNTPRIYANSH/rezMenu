@@ -9,7 +9,7 @@ const Cart = () => {
  const handleClose = () => {
     console.log("crt button status : ", cttog.ctStatus);
     if (cttog.ctStatus === 0) {cttog.setctStatus(1);
-        document.getElementById('cart-page').style.right = "-500px";
+        document.getElementById('cart-page').style.right = "-1500px";
         
     }
     if (cttog.ctStatus === 1){
@@ -84,7 +84,7 @@ const Cart = () => {
         <p>Subtotal: ₹{subtotal}</p>
       </div>
       <br />
-      <div className="btn">
+      <div className="btn btn-b">
         <center>
 
         Confirm Order

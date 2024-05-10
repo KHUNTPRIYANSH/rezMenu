@@ -101,12 +101,20 @@
     margin-top: 10px;
 }
 
-.btn {
-    background: green;
+.btn:hover {
+    background: rgb(20, 158, 20);
+}
 
+.btn {
+    transition: 0.25s ease-in-out;
+    background: green;
     color: #fff;
     padding: 5px 13px;
     border: none;
     border-radius: 7px;
     font-size: 0.9rem;
 }
+    .btn-b {
+        padding: 9px 35px !important;
+        font-size: 1.15rem !important;
+    }
