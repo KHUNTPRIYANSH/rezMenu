@@ -1,0 +1,102 @@
+.item-card {
+    background-color: #303030;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px;
+    width: 100%;
+    border-radius: 13px;
+    position: relative;
+    max-width: 450px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.666);
+}
+
+.item-card .t-title {
+    margin-right: 25px;
+}
+
+.food-img {
+    width: 30%;
+    height: 150px;
+    /* max-height: 200px; */
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+
+.content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5px;
+}
+
+.food-img img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: 0.25s ease-in-out;
+}
+
+.item-card:hover .food-img img {
+    transform: scale(1.15);
+}
+
+#food-name {
+    color: #fff;
+}
+
+.price {
+    color: #fff;
+    font-weight: 600;
+}
+
+.description {
+    color: #ddd;
+    font-size: 0.9rem;
+    line-height: 17px;
+}
+
+.tags {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.tags>* {
+    padding: 4px 7.5px;
+    border: 1px solid green;
+    color: white;
+    font-size: 0.85rem;
+    border-radius: 7px;
+}
+
+.wishlist-btn>* {
+    color: green;
+}
+
+.wishlist-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.item-ftr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.btn {
+    background: green;
+
+    color: #fff;
+    padding: 5px 13px;
+    border: none;
+    border-radius: 7px;
+    font-size: 0.9rem;
+}
