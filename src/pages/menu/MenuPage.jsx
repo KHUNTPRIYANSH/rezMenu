@@ -1,7 +1,26 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import ItemCard from '../../components/ItemCard';
+
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import Badge from "@mui/material/Badge";
+import { CartContext } from '../../provider/CartContext';
 import "./MenuPage.css"
+import { CtVis } from '../../provider/CartVisibility';
+import Cart from '../../components/Cart';
 const MenuPage = () => {
+   const cttog = useContext(CtVis);
+  const {cart} = useContext(CartContext);const handleCartBtn = () => {
+    console.log("crt button status : ", cttog.ctStatus);
+    if (cttog.ctStatus === 0) {cttog.setctStatus(1);
+      document.getElementById('cart-page').style.right = 0;
+      
+    }
+    if (cttog.ctStatus === 1){
+      cttog.setctStatus(0);
+      document.getElementById('cart-page').style.right = "-500px";
+
+    } 
+  };
   // Sample menu data
  const menu = [
   
@@ -115,14 +134,35 @@ const MenuPage = () => {
 ];
 
   return (
+    <>
+    <Cart/>
     <div className="menu-page">
+      <div id="menu-header">
+<div className="hdr-links">
+  <div className="logo"> Arbre</div>
+  
+  <div className="link"  onClick={handleCartBtn}>
+            <a href="#">
+              Your Orders
+            </a>
+   <Badge
+              color="success"
+              badgeContent={cart.length}
+              showZero
+            >
+              <ShoppingCartIcon />
+            </Badge>
+  </div>
+</div>
       <h1 className="t-title">Menu Items</h1>
+      </div>
       <div className="menu-grid">
         {menu.map((item, index) => (
           <ItemCard key={index} {...item} />
         ))}
       </div>
     </div>
+    </>
   );
 };
 

@@ -14,7 +14,10 @@
 .item-card .t-title {
     margin-right: 25px;
 }
-
+#food-name {
+    margin-right: 25px;
+    font-size: 1.2rem !important;
+}
 .food-img {
     width: 30%;
     height: 150px;
@@ -53,22 +56,29 @@
 
 .description {
     color: #ddd;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.1px;
     line-height: 17px;
 }
 
 .tags {
+    margin-top: 5px;
     display: flex;
     align-items: center;
     gap: 7px;
 }
 
 .tags>* {
-    padding: 4px 7.5px;
+    padding: 3px 7px;
     border: 1px solid green;
     color: white;
-    font-size: 0.85rem;
-    border-radius: 7px;
+    font-size: 0.8rem;
+    border-radius: 3px;
+    transition: 0.2s ease-in-out;
+    }
+
+    .tags>*:hover {
+        background-color: green;
 }
 
 .wishlist-btn>* {

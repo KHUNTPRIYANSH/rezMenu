@@ -1,0 +1,119 @@
+.cart-container {
+    padding: 25px 0;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    /* margin-top: 20px; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #eee;
+}
+
+.hd {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#cls {
+    color: #fff;
+}
+
+#cart-page {
+    padding: 25px;
+    height: 100dvh;
+    width: 100vw;
+    position: fixed;
+    background: #202020;
+    z-index: 111;
+    right: -500px;
+    transition: 0.35s ease-in-out;
+
+}
+
+#cart-page h2 {
+    color: #fff;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cart-item {
+    border-radius: 7px;
+    padding: 9px;
+    background: #202020;
+}
+
+.item-info {
+    display: flex;
+    gap: 15px;
+    /* justify-content: ; */
+}
+
+.cart-summary {
+    /* position: absolute; */
+    display: flex;
+    position: f;
+    color: #fff;
+    justify-content: space-between;
+    font-weight: bold;
+    width: 100%;
+    bottom: 25px !important;
+}
+
+.item-img-cart {
+    height: 100px;
+    width: 30%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+.item-img-c {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+    transition: 0.25s ease-in-out;
+}
+
+.item-card:hover .food-img img {
+    transform: scale(1.15);
+}
+
+.content-grd .item-ftr {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.content-grd {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5px;
+    position: relative;
+    justify-content: flex-start;
+}
+
+.add-rmv span {
+    background: #282828;
+}
+
+.add-rmv {
+    overflow: hidden;
+    border-radius: 5px;
+    display: flex;
+}
+
+.add-rmv>* {
+    border: none;
+    color: #fff;
+    padding: 3px 12.5px;
+    background-color: #353535;
+}
